@@ -10,7 +10,7 @@ THREADS=50
 MEM_GB=128
 
 # 
-for sample in ${SAMPLES34[@]}; do
+for sample in ${SAMPLESall[@]}; do
     python scripts/filter_sv.py 02.syri.output/${sample}/${sample}_syri.vcf 03.SV_ge20/${sample}_SV.vcf
 done
 
